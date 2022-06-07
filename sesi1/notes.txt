@@ -1,0 +1,35 @@
+BASIC WEB
+
+1. instalasi tempat untuk tulis code
+2. membuat file ".html"
+3. edit file html dan buka file html di browser
+
+
+html
+
+1. pelajari inspect di browser
+2. pelajari tag HTML berbeda-beda
+3. coba
+
+tag <html>
+1. <html> </html>
+2. <head> </head>
+3. <title> </title>
+4. <body> </body>
+5. <h1> </h1> untuk judul, text besar dan bold
+6. <p> </p> untuk paragraf
+7. <img> untuk gambar
+8. <br> untuk baris baru
+9. <div> </div> untuk apapun, bebas, bisa isi tag lain, bisa isi text
+10. <span> </span> mirip div tapi tidak ngambil tempat 1 baris penuh seperti div
+11. <ul> </ul> unordered list, untuk bikin list pakai bulat bulat
+12. <ol> </ol> ordered list, untuk bikin list yang angka urut 1,2,3,...
+13. <li> </li> list item untuk satu barang di dalam ul atau ol
+14. <a> </a> untuk link ke website lain
+
+saat mengetik tulisan di html, kalau mau ketik beberapa simbol yang digunakan html seperti < > & perlu kita ganti jadi:
+& jadi &amp;
+< jadi &lt;
+> jadi &gt;
+" becomes &quot;
+' becomes &#39;

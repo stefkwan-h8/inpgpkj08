@@ -1,0 +1,42 @@
+Layout HTML
+- Block
+    mengambil seluruh tempat di satu baris
+- inline
+    mengambil sedikit tempat saja sesuai yang dia perlukan, bisa ditempatkan bareng text, misalnya img untuk emoji
+
+Membuat CSS
+- tag <style> di dalam <head>
+- tag <link> untuk link ke file CSS terpisah
+
+Tag HTML
+1. <html> </html>
+
+2. <head> </head>
+3. <title> </title> untuk taruh judul halaman html, taruh di dalam head
+
+4. <body> </body>
+* tag dibawah sini semuanya untuk di dalam body
+5. <h1> </h1> untuk judul, text besar dan bold
+6. <p> </p> untuk paragraf
+7. <img> untuk gambar
+8. <br> untuk baris baru
+9. <div> </div> untuk apapun, bebas, bisa isi tag lain, bisa isi text
+10. <span> </span> mirip div tapi tidak ngambil tempat 1 baris penuh seperti div
+11. <ul> </ul> unordered list, untuk bikin list pakai bulat bulat
+12. <ol> </ol> ordered list, untuk bikin list yang angka urut 1,2,3,...
+13. <li> </li> list item untuk satu barang di dalam ul atau ol
+14. <a> </a> untuk link ke website lain
+15. <form> </form>
+16. <input type="text">
+    <input type="email">
+    <input type="password">
+    <input type="number">
+17. <textarea> </textarea> untuk input text yang lebih banyak
+18. <select> </select> untuk kasih pilihan yang user tinggal pilih dan klik
+    <option> </option> pilihan di dalam select
+19. <input type="checkbox" value="Bike"> untuk membuat pilihan yang boleh pilih lebih dari satu
+20. <input type="submit"> untuk membuat tombol yang "submit" form nya
+21. <button> </button> tombol biasa
+22. <table> </table> bikin tabel
+    <tr> </tr> satu baris di tabel table
+    <td> </td> satu kotal di dalam tr
