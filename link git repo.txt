@@ -1,0 +1,13 @@
+-- di folder lokal di terminal
+git init
+git remote add origin (link repo contohnya https://github.com/stefkwan-h8/inpgpkj8.git)
+git add .
+git commit -m "lagi mau upload update sesi 2"
+git push
+
+-- pertama kali dia bakal minta push set upstream, diikuti saja
+-- pertama kali dia juga akan minta user password github, di input yang punya masing2
+-- kalau bukan pertama kali, dia gk akan minta set upstream lagi, atau password lagi, jadi cukup
+git add .
+git commit -m "update sesi 3"
+git push
