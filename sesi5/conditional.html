@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Conditional</title>
+    </head>
+
+    <body>
+        <label>nilai</label> 
+        <input type="number" id="input-nilai" onchange="hitungGrade()">
+        <p id="tempat-grade">grade</p>
+
+        <script>
+            function hitungGrade(){
+                let nilai = document.getElementById("input-nilai").value
+                console.log(nilai)
+
+                let grade = ""
+                // nilai 100 dapat A
+                if (nilai == 100){
+                    grade = "A"
+                } else if (nilai >= 80 && nilai <= 99){
+                    grade = "B"
+                } else if (nilai >= 70 && nilai <= 79){
+                    grade = "C"
+                } else if (nilai < 70){
+                    grade = "D"
+                } else {
+                    grade = "invalid"
+                }
+
+                console.log(grade)
+
+                // document.getElementById("tempat-grade").innerText = grade
+                document.getElementById("tempat-grade").innerText = "dengan nilai " + nilai + " grade adalah " + grade
+            }
+        </script>
+    </body>
+</html>

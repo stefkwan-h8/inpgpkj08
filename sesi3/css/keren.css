@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(155, 108, 73);
+    height: 1200px;
+}
+
+nav {
+    background-color: black;
+    top: 0;
+    position: sticky;
+}
+
+nav li {
+    background-color: lightgrey;
+    display: inline;
+
+    list-style-type: none;
+}
+
+#nav-home {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#hobi {
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+}
+
+#hobi ol {
+    list-style-type: upper-roman;
+}
+#hobi ul {
+    list-style-type: square;
+}
+
+.bg-blue {
+    background-color: darkblue;
+    color: white;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+#box {
+    height: 200px;
+    width: 300px;
+    background-color: #28b083;
+    border-radius: 12px;
+
+    border-width: 5px;
+    border-style: dashed;
+    border-color: black;
+
+    margin: 12px;
+    padding: 24px;
+
+    float: left;
+}
+#box3 {
+    height: 200px;
+    width: 300px;
+    background-color: #28b083;
+    border-radius: 12px;
+
+    border-width: 5px;
+    border-style: dashed;
+    border-color: black;
+
+    margin: 12px;
+    padding: 24px;
+
+    float: right;
+    margin-right: 180px;
+
+    position: relative;
+    z-index: 1;
+}
+
+#box2 {
+    height: 300px;
+    width: 300px;
+    background-color: #2885b0;
+    border-radius: 50%;
+    border: 6px solid navy;
+
+    text-align: center;
+    line-height: 300px;
+
+    position: absolute;
+    bottom: 12px;
+
+    z-index: 0;
+}
+
+@media(min-width: 800px) {
+    #box {
+        height: 300px;
+        width: 600px;
+    }
+
+    #box2 {
+        width: 600px;
+    }
+}
+
+.style-1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.style-2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(138, 0, 0);
+    font-weight: lighter;
+    text-decoration: dotted;
+}
+.style-3 {
+    color: rgb(32, 0, 138);
+    font-weight:800;
+    text-decoration:line-through;
+}
+
+a {
+    color: rgb(255, 238, 0);
+}
+
+a:visited{
+    color: rgb(151, 98, 0);
+}
+
+a:hover{
+    background-color: #2885b0;
+}

@@ -1,0 +1,107 @@
+sebuah website bisa dibuat dengan menggunakan file:
+- HTML
+
+sebuah file HTML bisa dihias dengan menggunakan file:
+- CSS
+
+sambungkan file HTML dengan file CSS dengan cara menambahkan tag link atribut rel="stylesheet" href="nama_file.css" di dalam tag head file HTML tersebut
+
+sebuah file HTML bisa dibuat interaktif dengan menggunakan file:
+- JS
+
+sambungkan file JS dengan menggunakan tag script atribut src="nama_file.js" di dalam tag body file HTML tersebut
+
+---
+
+sebenarnya, HTML CSS JS bisa digabung di satu file HTML saja, bukan 3 file terpisah. Hanya saja biasanya ini tidak profesional.
+
+CSS bisa kita tulis di dalam sebuah file HTML di dalam tag style. tag style ditulis di dalam tag head.
+
+JS bisa kita tulis di dalam sebuah file HTML di dalam tag script. tag script ditulis di dalam tag body.
+
+---
+
+untuk bisa bereaksi/menunggu sebuah kejadian "event" terjadi di halaman HTML kita, kita tambahakan "event listener" dengan cara menambahkan atribut di tag HTML nya.
+
+Contoh event yang paling sering digunakan adalah:
+- onclick
+
+kita bisa tambahakan atribut onclick ke sebuah tag HTML seperti:
+<button onclick="">ini button</button>
+
+di dalam kutip nya onclick, kita tambahakan function JS, function JS bisa kita isi banyak code JS di file JS nya.
+
+code JS bisa berbuat macam-macam hal, termasuk:
+- ubah styling halaman HTML (ubah css nya)
+- ubah isi konten halaman HTML (nambah/ hapus tag HTML, edit isi tag HTML)
+
+note: code JS yang sering digunakan untuk mengetes apakah code JS nya jalan adalah "console.log('isi bebas')" karena bisa terlihat di browser, di inspect, di console
+
+---
+
+function
+
+function namaFunction(){
+    code JS di dalam sini
+    bisa banyak baris
+    bebas
+}
+
+function digunakan untuk mengumpulkan code JS dan diberikan sebuah nama, jadi bisa dipanggil dan digunakan
+
+
+variable
+
+let namaVariable = 0
+const pi = 3.14
+var nama = "Andi"
+
+kita hanya gunakan let 1 kali saja saat pertama kali membuat variable tersebut.
+
+variable digunakan untuk menyimpan data di JS. data jadi punya nama dan bisa kita panggil. data nya juga bisa kita edit.
+
+misalnya kita punya varible untuk menyimpan angka counter (sudah di klik berapa kali)
+
+let counter = 0
+
+lalu bisa kita edit jadi bertambah 1
+
+counter = counter + 1
+
+
+var adalah cara jadul untuk membuat variable, sejak 2015 JS menggunakan let dan const (cara baru yang lebih keren)
+let adalah untuk menggantikan var
+const adalah untuk variable yang isi datanya TIDAK berubah, const singkatan constant, untuk data yang kita gk mau ubah. variable const kalau kita coba ubah, akan membuat error.
+
+
+---
+tipe data
+
+integer
+let counter = 0
+let umur = 21
+
+float
+let pi = 3.14
+let harga = 2.5
+
+string
+let message = "salam kenal, selamat pagi"
+let hasil = "Selamat! Anda custome ke-100, dan menang hadiah!"
+
+boolean
+let sudahMakan = true
+let kenyang = false
+
+array
+let antrian = ["andi", "budi", "denisa", "kevin", "john"]
+* andi punya angka urut index 0
+* budi punya angka urut index 1
+* denisa punya angka urut index 2
+* kevin punya angka urut index 3
+* john punya angka urut index 4
+
+object
+let kelas = {"andi":80, "budi": 60, "cindy": 0}
+let belanja = {"beras":1, "telur":12, "minyak":2}
+

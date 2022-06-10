@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Game Suit</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Projek Game Suit</h1>
+        
+        <form>
+            <label>Input gunting/ kertas/ batu</label>
+            <select id="pemain">
+                <option value="gunting">Gunting</option>
+                <option value="kertas">Kertas</option>
+                <option value="batu">Batu</option>
+            </select>
+            <br>
+            <button type="button" onclick="pilih()">OK</button>
+            <br>
+            <p id="pilihan-lawan"></p>
+            <p id="pilihan-pemain"></p>
+        </form>
+
+        <script>
+            function pilih(){
+                // code JS
+                console.log("sudah di klik")
+                let pemain = document.getElementById("pemain").value
+
+                let lawan = ""
+                let random = Math.floor(Math.random() * 3)
+                if (random == 0){
+                    lawan = "batu"
+                } else if (random == 1){
+                    lawan = "kertas"
+                } else if (random == 2){
+                    lawan = "gunting"
+                }
+
+                document.getElementById("pilihan-lawan").innerText = lawan
+
+                let hasil = ""
+
+                if (pemain == "gunting"){
+                    if (lawan == "gunting"){                        
+                        hasil = "draw/ seri"  
+                    } else if (lawan == "batu"){
+                        hasil = "lose/ kalah"
+                    } else if (lawan == "kertas"){
+                        hasil = "win/ menang"
+                    }
+                } else if (pemain == "batu"){                    
+                    if (lawan == "gunting"){
+                        hasil = "win/ menang"
+                    } else if (lawan == "batu"){
+                        hasil = "draw/ seri"
+                    } else if (lawan == "kertas"){
+                        hasil = "lose/ kalah"
+                    }
+                } else if (pemain == "kertas"){
+                    if (lawan == "gunting"){
+                        hasil = "lose/ kalah"
+                    } else if (lawan == "batu"){
+                        hasil = "win/ menang"
+                    } else if (lawan == "kertas"){
+                        hasil = "draw/ seri"
+                    }
+                }
+
+                document.getElementById("pilihan-pemain").innerText = hasil
+            }
+        </script>
+    </body>
+</html>

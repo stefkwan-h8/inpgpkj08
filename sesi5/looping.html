@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Loop</title>
+    </head>
+
+    <body>
+        <h1>List murid kelas</h1>
+        <ul id="tempat-nama">
+
+        </ul>
+
+        <script>
+            let kelas = ["andi", "budi", "denisa", "kevin", "john"]
+            let index = 0
+
+            while (kelas[index]){
+                let nama = kelas[index]
+
+                document.getElementById("tempat-nama").innerHTML += `<li>${nama}</li>`
+                // document.getElementById("tempat-nama").innerHTML += `<li>` + nama + `</li>`
+                
+                index++
+            }
+        </script>
+    </body>
+</html>

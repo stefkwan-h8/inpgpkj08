@@ -1,0 +1,176 @@
+Algoritma
+satu set instruksi untuk mengerjakan suatu hal.
+- input --> data yang bisa dimengerti oleh komputer
+- proses --> data dari input di proses, dipertanyakan, diubah, ditambah, dll...
+- output --> data yang bisa dimengerti oleh komputer
+
+Contoh kita mau cari bola tenis di sebuah kotak penuh bola bola lainnya
+1. buka kotak
+2. cari bola tenis
+
+input
+kotak isi bola --> tipe data yang bisa diterima program
+array isi string, array adalah tipe data yang bisa menyimpan banyak tipe data lainnya
+string adalah tipe data text, tulisnya pakai kutip "" ''
+kotak = ["bekel", "tennis", "kelereng", "merah", "basket"]
+
+proses
+Variable hasil untuk menyimpan hasil akhir "ketemu" atau "tidak"
+isi variable hasil dengan "tidak ketemu"
+
+Looping, untuk setiap barang (string) di dalam kotak (array)
+    Conditional, apakah "tennis"?
+        kalau iya "tennis", kita isi variable hasil kita tadi dengan "ketemu"
+
+PRINT variable hasil
+
+output
+hasil = "ketemu" / "tidak ketemu"
+
+
+Conditional
+
+input variable nilai isi integer (angka numerik bulat)
+
+1. cek apakah lulus
+IF nilai > 70
+    PRINT "lulus"
+
+2. cek apakah lulus/ tidak lulus
+IF nilai > 70
+    PRINT "lulus"
+ELSE
+    PRINT "tidak lulus"
+
+3. cek Grade muridnya, 
+- kalau 80-100 dapat A, 
+- kalau 70-80 dapat B, 
+- kalau pas di 70 dapat C, 
+- sisanya D untuk tidak lulus
+
+buat variable grade untuk simpan "D"
+
+IF nilai >= 80 AND nilai <= 100
+    variabel grade = "A"
+ELSE IF nilai > 70 AND nilai < 80
+    variable grade = "B"
+ELSE IF nilai == 70
+    variable grade = "C"
+ELSE IF nilai < 70
+    variable grade = "D"
+
+PRINT grade
+
+
+LOOPING
+mengulang code yang sama selama kondisi masih True
+
+untuk setiap murid
+selama masih ada murid di dalam data [80, 90, 70,50 ,89,56,100,54,68,78]
+    jalankan code untuk cek grade
+
+kelas = [80, 90, 70,50 ,89,56,100,54,68,78]
+index = 0
+WHILE murid != undefined
+    murid = kelas[index]
+    index ++
+    cek grade murid
+
+    IF nilai >= 80 AND nilai <= 100
+        variabel grade = "A"
+    ELSE IF nilai > 70 AND nilai < 80
+        variable grade = "B"
+    ELSE IF nilai == 70
+        variable grade = "C"
+    ELSE IF nilai < 70
+        variable grade = "D"
+
+    PRINT grade
+
+
+
+Tipe Data di JS
+- integer (angka bulat, numerik bulat seperti 1 2 3 12093782 423 54)
+- float (angka dengan koma, numerik, 1.0 5.5 8.7666 2342421342.435 43.234)
+- string (text alfabet+numerik+simbol yang dikutip "HAcktiv8!!!!" 'INPG-pkj-08~~~~~' `halo`)
+- boolean (True False) semua hal, semua data di komputer diberikan label True atau False
+    komparator > < >= <= == !=
+    tipe data lain 0 0.0 "" '' `` FALSE yang lain TRUE
+
+- array
+    tipe data yang dibuat menggunakan []
+    di dalam [] bisa ada banyak data lainnya, setiap item dipisah dengan ,
+    buah_buahan = ["apel", "pisang", "jeruk"] --> array isi tiga string
+    untuk mengambil item di dalam sebuah array kita gunakan angka index, dimulai dari 0
+    misal mau ambil "apel"
+        buah_buahan[0] --> akan dapat "apel"
+
+- object
+    tipe data dibuat menggunakan {}
+    di dalam {} bisa ada banyak data lainnya, setiap item dipisah dengan ,
+    setiap item ada dalam bentuk sepasang key:value
+    key selalu string
+    value tipe datanya bebas
+    buah_buahan = {"apel":5000, "pisang":3000, "jeruk":2500} --> object isi tiga integer
+    untuk mengambil item di dalam sebuah object, kita gunakan key nya
+    misal mau ambil harga buah apel
+        buah_buahan["apel"] --> akan dapat 5000
+
+
+
+
+buat game suit
+input
+string "gunting" "batu" atau "kertas"
+
+proses
+terima input pemain "gunting" "batu" atau "kertas"
+
+buat input lawan --> "gunting" "batu" atau "kertas"
+masukkan code untuk buat pilihan random antara 0,1,2
+kalau 0 input lawan = "gunting"
+kalau 1 input lawan = "batu"
+kalau 2 input lawan = "kertas"
+
+bandingkan input pemain dengan input lawan
+kalau input permain "gunting"
+    kalau input lawan "gunting"
+        PRINT "draw/ seri"        
+    kalau input lawan "batu"
+        PRINT "lose/ kalah"
+    kalau input lawan "kertas"
+        PRINT "win/ menang"
+
+kalau input permain "batu"
+    kalau input lawan "gunting"
+        PRINT "win/ menang"
+    kalau input lawan "batu"
+        PRINT "draw/ seri"
+    kalau input lawan "kertas"
+        PRINT "lose/ kalah"
+
+kalau input permain "kertas"
+    kalau input lawan "gunting"
+        PRINT "lose/ kalah"
+    kalau input lawan "batu"
+        PRINT "win/ menang"
+    kalau input lawan "kertas"
+        PRINT "draw/ seri"
+
+
+output
+string "menang" "kalah"
+
+
+
+Javascript
+- tag script di dalam body sebuah file HTML
+- file .js terpisah kemudian di link ke file HTML menggunakn script src="nama_file.js"
+
+EVENT
+https://www.w3schools.com/tags/ref_eventattributes.asp
+kejadian yang terjadi di halaman web kita, misalkan:
+- ketikan keyboard
+- klik dari mouse
+- mouse lewat sebuah kotak/ div/ button/ link
+- form di submit, kalau menggunakan input tipe submit dan input tipe submit di klik oleh user

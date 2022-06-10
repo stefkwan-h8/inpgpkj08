@@ -1,0 +1,83 @@
+CSS
+Cascading Style Sheet
+lembar untuk styling yang bersusun
+
+HTML elements bisa dibilang punya hubungan dengan elemen HTML lainnya
+
+misalnya, tag html adalah parent dari tag head dan tag body.
+tag head dan tag body adalah sibling (saudara)
+tag head punya child tag title, tag head adalah parent dari tag title.
+tag body punya banyak child, tag body adalah parent dari banyak tag html lainnya, seperti:
+- nav
+- section
+- h1
+di file latihan2.html sesi 2 kemarin.
+
+untuk styling CSS kita bisa mereferensi HTML tag mana yang mau kita styling dengan menggunakan:
+- tag HTML sendiri, misalkan h1, body, p
+- id, atribut id sebuah tag html, misalkan #home
+- class, atribut class sebuah tag html, misalkan .bg-blue
+
+atribut id harus unik, seperti nomor KTP
+tidak boleh ada dua atau lebih elemen HTML yang punya id sama
+di CSS, kita gunakan #nama-id untuk menargetkan elemen degan id tertentu
+
+atribut class bisa digunakan oleh banyak HTML berbeda,
+sama seperti kita batch-8, semua orang di kelas ini punya atribut sama
+yaitu batch-8, class batch-8
+di CSS, kita gunakan .nama-class untuk targetkan elemen degan class tertentu
+
+untuk mengubah tampilan sebuah elemen HTML kita gunakan CSS
+tag {
+    property-css: value;
+}
+
+property-css ada banyak, contohnya:
+1. color: warna tulisan
+    cara tulis warna di CSS ada tiga cara: 
+    a. nama warna seperti red blue green
+    b. #sdf123 hashtag warna dan 6 karakter alfanumerik
+    c. rgb atau rgba untuk pilih red seberapa banyak, green brp, blue brp, alpha (transparansi) berapa persen
+    bisa lihat detail di Color Values di https://www.w3schools.com/html/html_colors.asp
+    untuk pilih warna bisa google html color picker harusnya google punya picker muncul dan bisa dipakai
+2. background-color: warna background
+3. background-image
+4. display: inline/ block/ none (menentukan elemen html tipe inline block atau tidak terlihat)
+
+5. font-weight: bold (untuk buat font jadi tebal atau tipis)
+6. font-family: pilih font
+7. font-style: italic (untuk buat text jadi italic)
+8. text-transform: capitalize (untuk ubah text sebuah elemen html jadi huruf BESAR semua, kecil semua, atau caps lainnya, misal Title)
+9. text-align: tulisan mau ada di posisi kiri, kanan, atau tengah
+10.line-height: satu baris tulisan seberapa tinggi
+
+11. border
+    border-radius
+    border-color
+    border-width
+    border-style
+biasanya border color width dan style bisa digabung di satu css property border
+
+12. height: tinggi elemen html dalam px, em, vh (px dulu saja)
+13. width: lebar elemen html dalam px (pixels)
+14. margin: jarak antara 1 elemen dengan elemen lain
+    margin: empat sisi
+    margin-top
+    margin-bottom
+    margin-left
+    margin-right
+15. padding: jarak antara konten elemen dengan border nya
+    padding: empat sisi
+    padding-top
+    padding-bottom
+    padding-left
+    padding-right
+
+16. position: biasanya relative, tapi bisa kita edit untuk buat elemen html lokasinya tertentu
+    top: posisi dari atas layar
+    left: posisi dari kiri layar
+17. z-index: kalau sudah punya property position kita bisa susun elemen nya numpuk depan belakang pakai z-index
+18. float: membuat elemen bisa sharing satu baris dengan elemen lain, coba bedakan dengan display inline
+
+
+jika sudah terbiasa dengan css dan mencari cara untuk menulis lebih cepat lebih mudah, boleh pelajari sass
