@@ -1,0 +1,52 @@
+body {
+    background-color: burlywood;
+    font-family: "Lucida Handwriting", "Lucida Console", "Courier New", monospace;
+    background-size: cover;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px white;
+}
+
+button {
+    border: 2px solid transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+button:hover {
+    border: 2px solid white;
+}
+
+.green {    
+    background-color: #4CAF50; /* Green */
+}
+.yellow {    
+    color: black;
+    background-color: #FFFF00;
+}
+.yellow:hover {    
+    border: 2px solid black;
+}
+.gray {    
+    background-color: #C0C0C0;
+}
+.blue {    
+    background-color: #008080;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 12px;
+}
+
+footer h3 {
+    text-shadow: 2px 2px 5px black;
+}
