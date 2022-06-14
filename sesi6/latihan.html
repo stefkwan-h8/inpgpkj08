@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            latihan DOM dan REGEX
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="latihan.html">Halaman Utama</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <h1>Hobi Saya</h1>
+        <input type="text" id="text-hobi">
+        <button onclick="nambahHobi()">Submit</button>
+        <p class="red hidden" id="error">please input hobi</p>
+        <ul id="list-hobi"></ul>
+
+        <h1>Komentar</h1>
+        <textarea onchange="cekKomen()" id="komen" cols="30" rows="10"></textarea>
+        <br>
+        <button>Submit Komentar</button>
+
+        <h1>KTP</h1>
+        <input type="text" id="ktp">
+        <button onclick="cekKtp()">Cek KTP</button>
+        <p id="cek-ktp" class="red"></p>
+
+        <footer>
+            <p>background image by <a href="https://unsplash.com/@anniespratt">annie spratt</a>
+            </p>
+
+        </footer>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

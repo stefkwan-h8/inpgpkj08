@@ -1,0 +1,19 @@
+body {
+    background-image: url("bunga.jpg");
+    background-size: cover;
+}
+
+.red {
+    color: rgb(168, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
